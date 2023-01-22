@@ -1,3 +1,5 @@
+package classes;
+
 public class Employee {
 
   public int id;
@@ -12,10 +14,14 @@ public class Employee {
     }
 
 
-
-
-
-
+    @Override
+    public String toString() {
+        return "Employee{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", salary=" + salary +
+                '}';
+    }
 
     public int getId() {
         return id;
